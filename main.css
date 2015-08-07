@@ -1,0 +1,116 @@
+html, body{
+	margin:0px;
+	height:100%;
+	font-family:arial;
+	overflow:hidden;
+}
+
+.homework form{
+	display:block;
+	width:800px;
+	margin:30px auto;
+}
+
+.homework form div.passenger{
+	background: #AFDCFF;
+	border-bottom:1px dotted #168EFF;
+	padding:5px;
+}
+
+.homework form div.passenger.tpl{
+	display:none;
+}
+
+.homework form div.passenger:after{
+	content: ".";
+	height:1px;
+	display:block;
+	clear:both;
+}
+
+.homework form label{
+	display: block;
+	float:left;
+	margin-right:5px;
+}
+.homework form label span.label, .homework form label  input, .homework form label  select{
+	display:block;
+	float:left;
+}
+.homework form label  select{
+	width:158px;
+}
+.homework form label span.label{
+	width: 100px;
+}
+.homework > *{
+	width: 800px;
+	margin: 0px auto;
+}
+.homework > p{
+	font-weight:bold;
+}
+.homework > div.title{
+	background: #4283a8;
+	color:#fff;
+	padding:5px;
+	width:100%;
+	font-weight:bold;
+}
+.homework > div.title div{
+	width:800px;
+	margin:0px auto;
+}
+.homework span.mandatory{
+	color:#f00;
+}
+
+.homework span.alternative{
+	color: #ffAA00;
+}
+.question > div{
+	font-weight: bold;
+	font-size:200px;
+	line-height:1080px;
+	height:100%;
+	width:125px;
+	text-align:center;
+	margin:auto;
+}
+.menu{
+	position:absolute;
+	bottom:-364px;
+	left:870px;
+	width:200px;
+	margin:0px auto;
+	background: #fff url("images/bg.png");
+	opacity:0.3;
+	z-index:10000;
+}
+
+.menu:hover{
+	opacity:1;
+}
+
+.menu .menu-label{
+	padding-top:5px;
+	text-align:center;
+	border:1px solid #ccc;
+	border-bottom: 0px;
+}
+.menu ul{
+	margin:0px;
+	padding:0px;
+}
+.menu a{
+	color:#000;
+	text-decoration: none;
+	padding:3px;
+	border:1px solid #ccc;
+	border-top: 0px;
+	background: rgba(255,255,255,0.8);
+	display:block;
+}
+.menu a:hover{
+	background: #FFFFBB;
+}
