@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <link type="text/css" rel="stylesheet" href="main.css" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validate.js"></script>
 </head>
+
 <body>
-<div class="slide homework">
-	<div class="title">
-		<div>
-			Tema pentru acasa
-		</div>
-	</div>
-	<form action="" class="passengers">
-		<div class="passenger">
-			<label>
-				<span class="label">Tip <span class="mandatory">*</span></span>
-				<select>
-					<option>-- selecteaza --</option>
-					<option>adult (12 - 65)</option>
-					<option>copil (1 - 12)</option>
-					<option>sugar (&lt; 1)</option>
-					<option>senior(&gt; 65)</option>
-				</select>
-			</label>
-			<label>
-				<span class="label">Nume <span class="mandatory">*</span></span><input type="text" name="name">
-			</label>
-			<label>
-				<span class="label">Email <span class="mandatory">*</span></span><input type="text" name="email" />
-			</label>
-			<label>
-				<span class="label">Telefon fix<span class="alternative">*</span></span><input type="text" name="fix" />
-			</label>
-			<label>
-				<span class="label">Telefon mobil<span class="alternative">*</span></span><input type="text" name="mobil" />
-			</label>
-			<label>
-				<span class="label">Data nasterii<span class="mandatory">*</span></span><input type="text" name="data_nascarii" />
-			</label>
-		</div>
-		<a href="javascript://">inca un pasager</a>
-	</form>
-	<p>Reguli validare</p>
-	<ul>
-		<li>Pasagerul nu se valideaza decat daca are minim 1 camp completat</li>
-		<li>Datele obligatorii</li>
-		<li>Datele alternative</li>
-		<li>
-			Corectitudinea datelor
-			<ul>
-				<li>Formatul datelor sa fie corect (email, telefon, data)</li>
-				<li>Datele sa fie consistente (tip pasager vs. data nasterii)</li>
-			</ul>
-		</li>
-	</ul>
-</div>
+    <div class="slide homework">
+        <div class="title">
+            <div>
+                Tema pentru acasa
+            </div>
+        </div>
+
+        <!-- Form pagina -->
+        <form action="" class="passengers">
+            <div class="passenger">
+
+                <!-- Tipul pasagerului -->
+                <label>
+                    <span class="label">Tip
+                        <span class="mandatory">*</span>
+                    </span>
+                    <select>
+                        <option>Categoria de varsta</option>
+                        <option>Bebelus (&lt; 1)</option>
+                        <option>Copil (1 - 12)</option>
+                        <option>Adult (12 - 65)</option>
+                        <option>Senior(&gt; 65)</option>
+                    </select>
+                </label>
+
+                <!-- Numele pasagerului -->
+                <label>
+                    <span class="label">Nume
+                        <span class="mandatory">*</span>
+                    </span>
+                    <input type="text" name="name" placeholder="ex. Popescu Ion" minlength="3" required />
+                </label>
+
+                <!-- Emailul pasagerului -->
+                <label>
+                    <span class="label">Email
+                        <span class="mandatory">*</span>
+                    </span>
+                    <input type="email" name="email" placeholder="ex. mail@domain.ro" />
+                </label>
+
+                <!-- Telefonul fix pasagerului -->
+                <label>
+                    <span class="label">Telefon fix
+                        <span class="alternative">*</span>
+                    </span>
+                    <input type="text" name="fix" placeholder="ex. 0729123456" />
+                </label>
+
+                <!-- Telefonul mobil al pasagerului -->
+                <label>
+                    <span class="label">Telefon mobil
+                        <span class="alternative">*</span>
+                    </span>
+                    <input type="text" name="mobil" />
+                </label>
+
+                <!-- Data nasterii -->
+                <label>
+                    <span class="label">Data nasterii
+                        <span class="mandatory">*</span>
+                    </span>
+                    <input type="text" name="dataNasterii" />
+                </label>
+
+            </div>
+
+            <button type="button" name="Submit"><a href="#">Adauga pasageri</a></button>
+
+        </form>
+
+        <!-- <p>Reguli validare</p>
+    <ul>
+      <li>Pasagerul nu se valideaza decat daca are minim 1 camp completat</li>
+      <li>Datele obligatorii</li>
+      <li>Datele alternative</li>
+      <li>
+        Corectitudinea datelor
+        <ul>
+          <li>Formatul datelor sa fie corect (email, telefon, data)</li>
+          <li>Datele sa fie consistente (tip pasager vs. data nasterii)</li>
+        </ul>
+      </li>
+    </ul> -->
+
+    </div>
 </body>
 <html>

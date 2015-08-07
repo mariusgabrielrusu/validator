@@ -6,7 +6,7 @@ html, body{
 }
 
 .homework form{
-	display:block;
+	display: inherit;
 	width:800px;
 	margin:30px auto;
 }
