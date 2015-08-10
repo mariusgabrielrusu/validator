@@ -114,3 +114,13 @@ html, body{
 .menu a:hover{
 	background: #FFFFBB;
 }
+.tpl{
+	display: none;
+}
+.button-holder {
+	display: inline-block;
+	position: relative;
+	float: bottom;
+	margin-top: auto;
+	bottom: 0;
+}
