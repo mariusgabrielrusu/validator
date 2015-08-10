@@ -1,16 +1,3 @@
-// function formValidation(e) {
-//     regExName = /^[a-zA-Z0-9]*[a-zA-Z]$/;
-//
-//     if(e.find(".name").val() == "") {
-//         alert("Ba, baiatule, baga ceva");
-//         return false;
-//     }
-//
-//     if( !regExName.test(e.find(".name").val()) ) {
-//         alert("Ai grija ce bagi");
-//     }
-// }
-
 var validator = {
     "mandatory" : function(val) {
         if(val.val() != "") {
@@ -21,6 +8,7 @@ var validator = {
             return false;
         }
     },
+
     "name" : function(val) {
         regex = /^[a-zA-Z]*[a-zA-Z]$/;
         if(regex.test( val.val()) ) {
@@ -31,14 +19,17 @@ var validator = {
             return false;
         }
 
-    }
+    },
 
     "email" : function(val) {
-
+        return true;
     },
+
     "dataNasterii" : function(val) {
-        
+        return true;
     }
 };
 
-$(".passenger").each()
+$.each( $(input).data("validation").split(",") , function(k,v) {
+    validator[v]();
+};
