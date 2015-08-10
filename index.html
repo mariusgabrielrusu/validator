@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="main.css" />
+</head>
+<body>
+<div class="slide homework">
+    <div class="title">
+        <div>
+            Tema pentru acasa
+        </div>
+    </div>
+
+    <form action="" class="passengers">
+        <div class="passenger tpl">
+            <label>
+                <span class="label">Tip <span class="mandatory tip">*</span></span>
+                <select>
+                    <option>-- selecteaza --</option>
+                    <option>adult (12 - 65)</option>
+                    <option>copil (1 - 12)</option>
+                    <option>sugar (&lt; 1)</option>
+                    <option>senior(&gt; 65)</option>
+                </select>
+            </label>
+            <label>
+                <span class="label">Nume <span class="mandatory">*</span></span><input type="text" name="name" minlength="3" type="text" requiered>
+            </label>
+            <label>
+                <span class="label">Email <span class="mandatory">*</span></span><input type="email" name="email" required/>
+            </label>
+            <label>
+                <span class="label">Telefon fix<span class="alternative">*</span></span><input type="text" name="fix" />
+            </label>
+            <label>
+                <span class="label">Telefon mobil<span class="alternative">*</span></span><input type="text" name="mobil" />
+            </label>
+            <label>
+                <span class="label">Data nasterii<span class="mandatory">*</span></span><input type="date" name="data_nascarii" />
+            </label>
+        </div>
+
+        <div class="passenger">
+            <label>
+                <span class="label">Tip <span class="mandatory tip">*</span></span>
+                <select>
+                    <option>-- selecteaza --</option>
+                    <option>adult (12 - 65)</option>
+                    <option>copil (1 - 12)</option>
+                    <option>sugar (&lt; 1)</option>
+                    <option>senior(&gt; 65)</option>
+                </select>
+            </label>
+            <label>
+                <span class="label">Nume <span class="mandatory">*</span></span><input type="text" name="name" minlength="3" type="text" requiered>
+            </label>
+            <label>
+                <span class="label">Email <span class="mandatory">*</span></span><input type="email" name="email" required/>
+            </label>
+            <label>
+                <span class="label">Telefon fix<span class="alternative">*</span></span><input type="text" name="fix" />
+            </label>
+            <label>
+                <span class="label">Telefon mobil<span class="alternative">*</span></span><input type="text" name="mobil" />
+            </label>
+            <label>
+                <span class="label">Data nasterii<span class="mandatory">*</span></span><input type="date" name="data_nascarii" />
+            </label>
+        </div>
+        <div class="button-holder">
+            <button class="addPassenger">Adauga pasager</button>
+            <input class="submit" type="submit">
+        </div>
+    </form>
+    <!-- <p>Reguli validare</p>
+    <ul>
+        <li>Pasagerul nu se valideaza decat daca are minim 1 camp completat</li>
+        <li>Datele obligatorii</li>
+        <li>Datele alternative</li>
+        <li>
+            Corectitudinea datelor
+            <ul>
+                <li>Formatul datelor sa fie corect (email, telefon, data)</li>
+                <li>Datele sa fie consistente (tip pasager vs. data nasterii)</li>
+            </ul>
+        </li>
+    </ul> -->
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="./validator/dist/jquery.validate.js"></script>
+<script src="index.js"></script>
+</body>
+<html>
